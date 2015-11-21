@@ -1,0 +1,265 @@
+drop view emp_view ;
+drop view exec_dir_view ;
+drop view lab_dir_view ;
+drop view chair_view ;
+drop view admin_view ;
+
+create view emp_view as
+SELECT 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID
+FROM F15C1_Emp;
+
+create or replace TRIGGER emp_trigger
+     INSTEAD OF insert ON emp_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C1_Emp( 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID)
+     VALUES (
+    :NEW.EMP_ID,
+    :NEW.ENAME,
+    :NEW.EEMAIL,
+    :NEW.EOFFICE,
+    :NEW.EPHONE,
+    :NEW.ESTATUS,
+    :NEW.ESTATUS_EFF_DATE,
+    :NEW.F15C1_LAB_LAB_ID,
+    'N',
+    'N',
+    'N',
+    'N',
+    :NEW.F15C1_AUTH_AUTH_ID) ;
+END;
+/
+
+create view exec_dir_view as
+SELECT 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID
+FROM F15C1_Emp where is_exec_dir = 'Y' ;
+
+create or replace TRIGGER exec_dir_trigger
+     INSTEAD OF insert ON exec_dir_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C1_Emp( 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID)
+     VALUES (
+    :NEW.EMP_ID,
+    :NEW.ENAME,
+    :NEW.EEMAIL,
+    :NEW.EOFFICE,
+    :NEW.EPHONE,
+    :NEW.ESTATUS,
+    :NEW.ESTATUS_EFF_DATE,
+    :NEW.F15C1_LAB_LAB_ID,
+    'N',
+    'Y',
+    'N',
+    'N',
+    :NEW.F15C1_AUTH_AUTH_ID) ;
+END;
+/
+
+create view lab_dir_view as
+SELECT 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID
+FROM F15C1_Emp where is_lab_dir = 'Y' ;
+
+create or replace TRIGGER lab_dir_trigger
+     INSTEAD OF insert ON lab_dir_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C1_Emp( 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID)
+     VALUES (
+    :NEW.EMP_ID,
+    :NEW.ENAME,
+    :NEW.EEMAIL,
+    :NEW.EOFFICE,
+    :NEW.EPHONE,
+    :NEW.ESTATUS,
+    :NEW.ESTATUS_EFF_DATE,
+    :NEW.F15C1_LAB_LAB_ID,
+    'N',
+    'N',
+    'N',
+    'Y',
+    :NEW.F15C1_AUTH_AUTH_ID) ;
+END;
+/
+
+create view chair_view as
+SELECT 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID
+FROM F15C1_Emp where is_chair = 'Y' ;
+
+create or replace TRIGGER chair_trigger
+     INSTEAD OF insert ON chair_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C1_Emp( 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID)
+     VALUES (
+    :NEW.EMP_ID,
+    :NEW.ENAME,
+    :NEW.EEMAIL,
+    :NEW.EOFFICE,
+    :NEW.EPHONE,
+    :NEW.ESTATUS,
+    :NEW.ESTATUS_EFF_DATE,
+    :NEW.F15C1_LAB_LAB_ID,
+    'N',
+    'N',
+    'Y',
+    'N',
+    :NEW.F15C1_AUTH_AUTH_ID) ;
+END;
+/
+
+create view admin_view as
+SELECT 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID
+FROM F15C1_Emp where is_admin = 'Y' ;
+
+create or replace TRIGGER admin_trigger
+     INSTEAD OF insert ON admin_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C1_Emp( 
+    EMP_ID,
+    ENAME,
+    EEMAIL,
+    EOFFICE,
+    EPHONE,
+    ESTATUS,
+    ESTATUS_EFF_DATE,
+    F15C1_LAB_LAB_ID,
+    IS_ADMIN,
+    IS_EXEC_DIR,
+    IS_CHAIR,
+    IS_LAB_DIR,
+    F15C1_AUTH_AUTH_ID)
+     VALUES (
+    :NEW.EMP_ID,
+    :NEW.ENAME,
+    :NEW.EEMAIL,
+    :NEW.EOFFICE,
+    :NEW.EPHONE,
+    :NEW.ESTATUS,
+    :NEW.ESTATUS_EFF_DATE,
+    :NEW.F15C1_LAB_LAB_ID,
+    'Y',
+    'N',
+    'N',
+    'N',
+    :NEW.F15C1_AUTH_AUTH_ID) ;
+END;
+/
