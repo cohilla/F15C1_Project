@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="r2" directorySegmentName="seg_0" id="A80ABCAE-9B50-D0E1-0CFC-6591468F643C">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:32:27 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<sourcePk>914C39C6-0FF2-A8D7-EDD4-22E3A31163A5</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6BD01BC6-0D4E-5839-6699-4C1C31478366</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C8BF32A8-A094-6AC4-5FF2-44F77177F875</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

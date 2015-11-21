@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDE8C0F5-CC23-19E9-91CA-05952D7E42AA" name="F15C1_Status">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>F1F3E828-0010-773F-E55B-7EA009CD3D41</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="status_id" id="7EE273F8-5125-277F-AA24-018F7163CDF1">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>36343988-DC41-9920-B691-EC81FE31F9FE</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seff_date" id="DA996307-C7DF-3CD6-53C6-6D0E019BCC5D">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>FA0BB83F-96E4-CA72-20E1-0D6A71140713</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rfe_status" id="7CC429C0-DB70-D18E-B67D-A69B097AAC46">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>918F35B4-279C-C6A9-118B-11235363EA9D</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sdescription" id="0DCE08AB-1163-0C3E-36A8-FB018A5D83BC">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>C4B8C940-7B66-0A25-AF04-D48F58661317</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1CFFB626-B89B-9AAB-349E-A1B0296E2C6F" name="F15C1_Status_PK">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>A3C5A402-079F-105D-F43A-035083810E4E</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EE273F8-5125-277F-AA24-018F7163CDF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

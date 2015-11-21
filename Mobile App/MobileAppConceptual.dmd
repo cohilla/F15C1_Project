@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MobileAppConceptual" id="D2312AA9-5C03-5E9D-A82B-B4E7AFB550A4" version="3.5">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:25:23 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D2312AA9-5C03-5E9D-A82B-B4E7AFB550A4</designId>
+</OSDM_Design>

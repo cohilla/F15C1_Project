@@ -1,0 +1,58 @@
+# Change the followin oracle account id and password to your oracle account id and password. Also, change A0 to your group's number but don't use F15 because it will make some internal names be too long.
+conn = connectTo 'jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl' 'C##cs347_CGH723' 'orcl_CGH723' 'rdf_mode' 'C1';
+
+Neo4j on conn "CREATE (:player { JERSEYNO : 88, PNAME : 'D. Bryant', POS : 'WR', COACHNO : 7902, DRAFTYEAR : '2005', SAL : 12, TEAMNO : 20})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 11, PNAME : 'C. Beasley', POS : 'WR', COACHNO : 7902, DRAFTYEAR : '2009', SAL : 2, TEAMNO : 20})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 20, PNAME : 'D. McFadden', POS : 'RB', COACHNO : 7902, DRAFTYEAR : '2001', SAL : 1, TEAMNO : 20})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 9, PNAME : 'T. Romo', POS : 'QB', COACHNO : 7902, DRAFTYEAR : '2001', SAL : 14, TEAMNO : 20})"
+
+Neo4j on conn "CREATE (:player { JERSEYNO : 88, PNAME : 'A. Bryant', POS : 'WR', COACHNO : 7102, DRAFTYEAR : '2007', SAL : 18, TEAMNO : 30})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 20, PNAME : 'L. Bell', POS : 'RB', COACHNO : 7102, DRAFTYEAR : '2010', SAL : 15, TEAMNO : 30})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 24, PNAME : 'D. Williams', POS : 'RB', COACHNO : 7102, DRAFTYEAR : '2008', SAL : 7, TEAMNO : 30})"
+
+Neo4j on conn "CREATE (:player { JERSEYNO : 88, PNAME : 'D. Thomas', POS : 'WR', COACHNO : 6611, DRAFTYEAR : '2006', SAL : 17, TEAMNO : 27})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 10, PNAME : 'P. Manning', POS : 'QB', COACHNO : 6611, DRAFTYEAR : '1999', SAL : 13, TEAMNO : 27})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 94, PNAME : 'D. Ware', POS : 'DE', COACHNO : 6611, DRAFTYEAR : '2001', SAL : 8, TEAMNO : 27})"
+
+Neo4j on conn "CREATE (:player { JERSEYNO : 30, PNAME : 'T. Gurley', POS : 'RB', COACHNO : 5500, DRAFTYEAR : '2015', SAL : 4, TEAMNO : 11})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 11, PNAME : 'T. Austin', POS : 'WR', COACHNO : 5500, DRAFTYEAR : '2014', SAL : 4, TEAMNO : 11})"
+
+Neo4j on conn "CREATE (:player { JERSEYNO : 99, PNAME : 'J. J. Watt', POS : 'DE', COACHNO : 5599, DRAFTYEAR : '2010', SAL : 19, TEAMNO : 21})"
+
+Neo4j on conn "CREATE (:player { JERSEYNO : 3, PNAME : 'C. Palmer', POS : 'QB', COACHNO : 2299, DRAFTYEAR : '2007', SAL : 12, TEAMNO : 29})"
+Neo4j on conn "CREATE (:player { JERSEYNO : 13, PNAME : 'L. Fitzgerald', POS : 'WR', COACHNO : 2299, DRAFTYEAR : '2005', SAL : 4, TEAMNO : 29})"
+
+
+Neo4j on conn "CREATE (:team { TEAMNO : 20, TNAME : 'Cowboys', LOC : 'Dallas' })"
+Neo4j on conn "CREATE (:team { TEAMNO : 30, TNAME : 'Steelers', LOC : 'Pittsburgh' })"
+Neo4j on conn "CREATE (:team { TEAMNO : 27, TNAME : 'Broncos', LOC : 'Denver' })"
+Neo4j on conn "CREATE (:team { TEAMNO : 11, TNAME : 'Rams', LOC : 'St. Louis' })"
+Neo4j on conn "CREATE (:team { TEAMNO : 21, TNAME : 'Texans', LOC : 'Houston' })"
+Neo4j on conn "CREATE (:team { TEAMNO : 29, TNAME : 'Cardinals', LOC : 'Arizona' })"
+
+Neo4j on conn "CREATE (:coach { COACHNO : 7902, CNAME : 'J. Garrett', YEARSEXP : 16 })"
+Neo4j on conn "CREATE (:coach { COACHNO : 7102, CNAME : 'M. Tomlin', YEARSEXP : 11 })"
+Neo4j on conn "CREATE (:coach { COACHNO : 2299, CNAME : 'B. Arians', YEARSEXP : 22 })"
+Neo4j on conn "CREATE (:coach { COACHNO : 5500, CNAME : 'J. Fisher', YEARSEXP : 20 })"
+Neo4j on conn "CREATE (:coach { COACHNO : 5599, CNAME : 'B. OBrian', YEARSEXP : 9 })"
+Neo4j on conn "CREATE (:coach { COACHNO : 6611, CNAME : 'G. Kubiak', YEARSEXP : 20 })"
+
+
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 20 AND b.teamno = 20 CREATE (a)<-[:players]-(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 30 AND b.teamno = 30 CREATE (a)<-[:players]-(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 27 AND b.teamno = 27 CREATE (a)<-[:players]-(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 11 AND b.teamno = 11 CREATE (a)<-[:players]-(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 21 AND b.teamno = 21 CREATE (a)<-[:players]-(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 29 AND b.teamno = 29 CREATE (a)<-[:players]-(b)"
+
+Neo4j on conn "MATCH(a:player)<-[:players]-(b:team) WHERE b.teamno = 20 RETURN b, a.pname, a.pos, a.coachno, a.teamno, a.draftyear"
+Neo4j on conn "MATCH(a:player)<-[:players]-(b:team) WHERE b.teamno = 30 RETURN b, a.pname, a.pos, a.coachno, a.teamno, a.draftyear"
+
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 20 AND b.teamno = 20 CREATE (a)-[:currteam]->(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 30 AND b.teamno = 30 CREATE (a)-[:currteam]->(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 27 AND b.teamno = 27 CREATE (a)-[:currteam]->(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 11 AND b.teamno = 11 CREATE (a)-[:currteam]->(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 21 AND b.teamno = 21 CREATE (a)-[:currteam]->(b)"
+Neo4j on conn "MATCH (a:player),(b:team) WHERE a.teamno = 29 AND b.teamno = 29 CREATE (a)-[:currteam]->(b)"
+
+Neo4j on conn "MATCH(a:player)-[:currteam]->(b:team)  RETURN b.tname, a.pname"

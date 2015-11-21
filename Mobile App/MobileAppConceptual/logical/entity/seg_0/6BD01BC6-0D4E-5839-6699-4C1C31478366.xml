@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6BD01BC6-0D4E-5839-6699-4C1C31478366" name="NFL_Coach">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:28:48 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="c_id" id="995425A7-0601-11E6-AED2-B500A8FA5E47">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:28:59 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cname" id="EB2C5ACE-B4DD-CE6E-CFFF-E27EA4290DAE">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:29:08 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="yearsexp" id="A695A7C1-65D1-F25D-0089-D36100E85970">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:29:53 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="t_id" id="7D995C98-242D-81CD-D49C-8C2163387287">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:40:33 UTC</createdTime>
+<generatorID>5D31C6EF-44AE-1C94-8D08-F80EEB537BB1</generatorID>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2EC1CAC8-6450-C22F-234E-9D3C63672700</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="914C39C6-0FF2-A8D7-EDD4-22E3A31163A5" name="NFL_Coach PK">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:29:06 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>995425A7-0601-11E6-AED2-B500A8FA5E47</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

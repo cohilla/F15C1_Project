@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7644BE32-56F9-63EA-65E5-87E22261A9D2" name="F15.C1Task">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-05 23:53:35 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="description" id="92058400-315F-243E-3642-20AF3C844102">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-05 23:54:00 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5000</dataTypeSize>
+<ownDataTypeParameters>5000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="D8145DEA-7B80-5742-077A-B472F6F33455">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-05 23:57:31 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_abbrv" id="2AF951FC-BB96-5034-D707-85684C9B417B">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-05 23:58:16 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

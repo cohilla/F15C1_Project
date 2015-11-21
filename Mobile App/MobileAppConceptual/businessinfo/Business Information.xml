@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="B2A94FDA-B1BE-4E8A-F349-D1FE3E060D37">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:25:24 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

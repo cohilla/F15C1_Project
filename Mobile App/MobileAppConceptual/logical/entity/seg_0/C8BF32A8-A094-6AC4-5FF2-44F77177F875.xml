@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C8BF32A8-A094-6AC4-5FF2-44F77177F875" name="NFL_Player">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:25:58 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="jerseyno" id="F08B7D35-577E-F551-1886-62FC5C5A2D7A">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:26:52 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pname" id="9EAD7506-0E3D-127E-40EB-73C2863DEF49">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:27:18 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pos" id="1BDE1D4B-799D-D08C-906F-2A965E497B21">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:27:32 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="draftyear" id="B5CF052E-2F5F-BC6E-DB95-E0FCC5431B8B">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:27:41 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sal" id="A12BB5C1-7543-31E5-49F6-08EC844EDF59">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:28:02 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="c_id" id="C4F00736-318B-9C32-87E6-34D94843F444">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:32:27 UTC</createdTime>
+<generatorID>A80ABCAE-9B50-D0E1-0CFC-6591468F643C</generatorID>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>995425A7-0601-11E6-AED2-B500A8FA5E47</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="t_id" id="D225DBA1-F45E-DECD-5F35-A9C864BF0243">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:40:22 UTC</createdTime>
+<generatorID>F2A2FE2B-47F4-1173-FE91-B60A9CD09634</generatorID>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<engineerTo>
+<item key="9A758EA7-3EEF-AB2C-73E2-00F60A02C70F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2EC1CAC8-6450-C22F-234E-9D3C63672700</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

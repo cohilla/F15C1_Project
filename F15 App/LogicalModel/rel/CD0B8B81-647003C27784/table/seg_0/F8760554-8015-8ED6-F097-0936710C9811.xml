@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8760554-8015-8ED6-F097-0936710C9811" name="F15C1_r2t">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>C47EC1BB-2BB5-D9AA-0FAC-ECE8B81D9987</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="r2t_id" id="8E3AAFC5-8A9F-8AE8-18A3-F3E4B07FB446">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>5795942A-2DCC-616C-646E-F3953C0B8853</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eff_date" id="858405A5-EED1-8ECD-5920-2B139A0592F1">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>C72FD161-9B60-290D-934C-D304D6ABEB61</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15C1_Task_task_id" id="60D06124-F055-E10B-5B2E-A26D03F165C0">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>E053FED7-1BB8-BA6A-F88B-E6AD77D946C6</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BEDD87C-F6B2-1856-7982-D4DE615CF87C" referredColumn="F04E3353-3675-4B76-04F7-D976C693EFE7"/>
+</associations>
+</Column>
+<Column name="F15C1_RFE_rfe_id" id="90884F52-07F8-F318-F889-7343B6CC2660">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>D5C16801-9231-BBE7-F00D-17BD7A1CB2CF</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB9F8F48-7E0A-B138-58AB-707A257364B5" referredColumn="927F9F85-2A9B-3FE4-5924-6DC47A4BF752"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8EF43D1-B696-6AD1-9E14-9AF480C25CCC" name="F15C1_r2t_PK">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>4787021A-25E6-4E7B-E3A1-933F26D3B009</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E3AAFC5-8A9F-8AE8-18A3-F3E4B07FB446"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0E77007-2D91-CFE6-D514-EF171BCFB4BB" name="F15C1_r2t_F15C1_Task_FK">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>34433BA6-4F3C-4A1F-4965-18332BC4EE3C</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60D06124-F055-E10B-5B2E-A26D03F165C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCF57A62-07AA-BE1C-5133-D8117C5ADAAC" name="F15C1_r2t_F15C1_RFE_FK">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 16:08:15 UTC</createdTime>
+<generatorID>12949A1B-DA85-A181-0D2E-79A0D5557981</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90884F52-07F8-F318-F889-7343B6CC2660"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F3D6863-870A-D697-5632-E88804679E06" name="rfe_contacts">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:38:46 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="D4C28940-8CA8-F4CA-0746-68E0082EA5B1">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:42:17 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_role_code" id="D69CB95F-983A-694B-389C-88C3B405102A">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:42:33 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="C2D5C4D8-80BC-4C40-4886-81FE1062C4D7">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:44:14 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="FAB8FB16-68F0-C2B0-BDEF-A1B9197F3A25">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:44:31 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="C24BC734-D73F-F90F-D924-9BB0BF2449B0">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:47:01 UTC</createdTime>
+<generatorID>CEE3B2A6-4DF7-4E90-695F-953EEDA9CD71</generatorID>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>64FA5820-F95F-61FC-9023-A10AE0FB6FF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_code" id="48F4653F-5315-C930-32F5-ADF867F37A66">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-24 06:23:40 UTC</createdTime>
+<generatorID>A9006F98-4F6C-6F52-7A76-C61E5CEC512A</generatorID>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1F4DDEB1-9E8F-4A2F-5B7A-53CB4A3DFADE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="3A102C6B-EF2F-FE6F-273B-2786DB4690EB">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-24 06:50:38 UTC</createdTime>
+<generatorID>6ED80CEF-B8D9-EB4B-C59D-F7CB2CDE5867</generatorID>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>05C87EB3-5BB7-556E-17E7-23B16D893397</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33E13A11-F838-DA72-E07D-C57EE18D124B" name="rfe_contacts PK">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-24 06:23:21 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

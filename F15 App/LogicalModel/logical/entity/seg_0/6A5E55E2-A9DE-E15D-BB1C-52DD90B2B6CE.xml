@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A5E55E2-A9DE-E15D-BB1C-52DD90B2B6CE" name="F15C1_RType">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:18:16 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rcode" id="1F4DDEB1-9E8F-4A2F-5B7A-53CB4A3DFADE">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:19:10 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rname" id="4CF6C014-2A9C-3CCA-3F9A-7E3AB4A83E0F">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:18:48 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rtype" id="F56AE9E4-E6C3-053E-3EA9-2A468EDA96D1">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:19:34 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="DEACC1A3-505C-569F-80D7-7F8728FC5C64">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:19:56 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="82B05601-32C1-D3AD-3962-BCEC9CA4F2A4" name="Role_Type PK">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:19:31 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1F4DDEB1-9E8F-4A2F-5B7A-53CB4A3DFADE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

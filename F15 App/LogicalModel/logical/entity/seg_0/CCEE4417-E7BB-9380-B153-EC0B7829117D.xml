@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CCEE4417-E7BB-9380-B153-EC0B7829117D" name="F15C1_Document">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-10-19 22:01:39 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="A4BEC718-17E8-F672-859C-3FC9C58560D7">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-10-19 22:01:55 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_name" id="85CA089C-F923-5BD9-B0EA-DF12C35B8406">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-11 14:37:27 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_mime" id="F5C13663-9DAC-2EFA-11CA-51348EF82927">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-11 14:37:27 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_charset" id="BB93178A-E951-E653-99CA-9FDE8E66017A">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-11 14:37:28 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_blob" id="E2058B11-3B71-BAD5-923A-F85CFCFBF60C">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-11 14:37:28 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_comments" id="D06881D9-C90E-9022-8587-DEC8368D54A6">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-11 14:37:29 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tags" id="6AACED6D-645B-682C-3251-8A5ED73465A4">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-11 14:40:48 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="EE3E9492-8325-E3BC-1423-695165838895">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-11 20:15:48 UTC</createdTime>
+<generatorID>537B4408-52FB-838A-CF08-4AD5EE6C7637</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>64FA5820-F95F-61FC-9023-A10AE0FB6FF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C901A4CF-293D-D7F1-613F-FBD5117051E7" name="F15.C1Document PK">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-10-19 22:02:09 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A4BEC718-17E8-F672-859C-3FC9C58560D7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20F241A0-D9BE-8C40-E094-920B2AB94F0A" name="F15C1_Auth">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-05 23:46:37 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="auth_id" id="A03A8D21-C91E-C600-AEAF-7C9D0C49D9A3">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-05 23:46:53 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_right" id="73C329C0-7416-7411-F9CD-687104F7B42B">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-05 23:47:15 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="721D21F4-F5C7-E944-69EC-8FF58784D97B" name="F15.C1Auth PK">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-05 23:47:00 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A03A8D21-C91E-C600-AEAF-7C9D0C49D9A3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

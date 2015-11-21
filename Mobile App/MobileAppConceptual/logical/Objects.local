@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="6BD01BC6-0D4E-5839-6699-4C1C31478366" name="NFL_Coach" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C8BF32A8-A094-6AC4-5FF2-44F77177F875" name="NFL_Player" seqName="seg_0"/>
+   <object objectType="Entity" objectID="0BC83D51-6E18-29B9-9A6C-322696871A7C" name="NFL_Team" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5D31C6EF-44AE-1C94-8D08-F80EEB537BB1" name="Relation_4" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A80ABCAE-9B50-D0E1-0CFC-6591468F643C" name="r2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F2A2FE2B-47F4-1173-FE91-B60A9CD09634" name="r3" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

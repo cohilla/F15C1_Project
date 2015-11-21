@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F3D6863-870A-D697-5632-E88804679E06" name="F15C1_Contact">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:38:46 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contact_rcode" id="D69CB95F-983A-694B-389C-88C3B405102A">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:42:33 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cname" id="D4C28940-8CA8-F4CA-0746-68E0082EA5B1">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:42:17 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="C2D5C4D8-80BC-4C40-4886-81FE1062C4D7">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:44:14 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="con_cmnts" id="FAB8FB16-68F0-C2B0-BDEF-A1B9197F3A25">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:44:31 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="C24BC734-D73F-F90F-D924-9BB0BF2449B0">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:47:01 UTC</createdTime>
+<generatorID>CEE3B2A6-4DF7-4E90-695F-953EEDA9CD71</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>64FA5820-F95F-61FC-9023-A10AE0FB6FF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rcode" id="619782BD-236B-3DC0-5B9B-ED6CBA7C6E02">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-12 17:36:52 UTC</createdTime>
+<generatorID>FF83722A-844B-4765-9FE9-B70F54301BF0</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1F4DDEB1-9E8F-4A2F-5B7A-53CB4A3DFADE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="4D07DFDB-D8FC-DCE2-4879-E69CFC6DD1D3">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-12 17:37:18 UTC</createdTime>
+<generatorID>31BB4620-EAE4-6835-65D0-AB344BDA5B46</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>05C87EB3-5BB7-556E-17E7-23B16D893397</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33E13A11-F838-DA72-E07D-C57EE18D124B" name="rfe_contacts PK">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-24 06:23:21 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D69CB95F-983A-694B-389C-88C3B405102A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

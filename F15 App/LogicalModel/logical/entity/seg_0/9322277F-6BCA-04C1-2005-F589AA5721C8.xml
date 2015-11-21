@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9322277F-6BCA-04C1-2005-F589AA5721C8" name="F15C1_Comment">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:48:09 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="com_id" id="E4FCDF5C-D4D3-1331-355D-50CA68049E05">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-12 17:37:44 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comment_entry_date" id="41582773-55D1-DD87-3F0D-0AC0A8C3622B">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:48:56 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="commnt" id="F70C1EB9-74B6-C4E1-EA2B-C27079965290">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:50:03 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="9661257E-DBCD-DE3A-D20B-B3D680D1389E">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:52:44 UTC</createdTime>
+<generatorID>290C60B8-3D7C-0D54-FA98-6B92833E91BE</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>64FA5820-F95F-61FC-9023-A10AE0FB6FF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="83FADDF2-B889-D2B2-FC32-F9B2EBA2872E">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-06 00:19:16 UTC</createdTime>
+<generatorID>0A91DB04-CCC0-9042-D694-7DDBD3DF3D65</generatorID>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>05C87EB3-5BB7-556E-17E7-23B16D893397</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="11C0ED9F-12C5-9B9D-17DF-2FA52727BBB7" name="f15C1_Comments PK">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-12 17:38:05 UTC</createdTime>
+<ownerDesignName>LogicalModel</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E4FCDF5C-D4D3-1331-355D-50CA68049E05</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

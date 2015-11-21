@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_20" directorySegmentName="seg_0" id="CEE3B2A6-4DF7-4E90-695F-953EEDA9CD71">
+<createdBy>Kopoka</createdBy>
+<createdTime>2015-10-23 06:47:01 UTC</createdTime>
+<ownerDesignName>ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="69AF8DD2-46A3-5759-2AF4-92FA91F089B4" value="true"/>
+</engineerTo>
+<sourcePk>1021BCA1-BC89-EAAD-2AE7-51D614B3907E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F8791BD5-A945-805B-D958-D1CA47C7C701</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1F3D6863-870A-D697-5632-E88804679E06</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="BEA756D8-A9E8-1962-7ED2-F24D32980437" mainViewID="14786DD4-209B-4CB9-5355-1009640A8902">
+<createdBy>bigstank</createdBy>
+<createdTime>2015-11-21 19:25:23 UTC</createdTime>
+<ownerDesignName>MobileAppConceptual</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
